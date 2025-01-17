@@ -998,8 +998,8 @@ third_task/CMakeFiles/nav_msgs_generate_messages_py.dir/clean:
 # Target rules for target third_task/CMakeFiles/third_task_generate_messages.dir
 
 # All Build rule for target.
-third_task/CMakeFiles/third_task_generate_messages.dir/all: third_task/CMakeFiles/third_task_generate_messages_py.dir/all
 third_task/CMakeFiles/third_task_generate_messages.dir/all: third_task/CMakeFiles/third_task_generate_messages_nodejs.dir/all
+third_task/CMakeFiles/third_task_generate_messages.dir/all: third_task/CMakeFiles/third_task_generate_messages_py.dir/all
 third_task/CMakeFiles/third_task_generate_messages.dir/all: third_task/CMakeFiles/third_task_generate_messages_cpp.dir/all
 third_task/CMakeFiles/third_task_generate_messages.dir/all: third_task/CMakeFiles/third_task_generate_messages_eus.dir/all
 third_task/CMakeFiles/third_task_generate_messages.dir/all: third_task/CMakeFiles/third_task_generate_messages_lisp.dir/all

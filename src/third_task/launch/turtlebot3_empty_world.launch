@@ -28,5 +28,5 @@
   <!-- Nodes -->
   <node pkg="third_task" type="distance_service.py" name="distance_service"/>
   <node pkg="third_task" type="position_publisher.py" name="position_publisher"/>
-  <node pkg="third_task" type="modified_pointop.py" name="pointop_controller"/>
+  <node pkg="third_task" type="turtlebot3_pointop_key.py" name="pointop_controller"/>
 </launch>

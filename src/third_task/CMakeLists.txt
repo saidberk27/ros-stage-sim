@@ -9,7 +9,6 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
 )
 
-## Mesaj ve servis tanımlamaları buraya gelmelidir (find_package'den sonra, catkin_package'den önce)
 add_message_files(
   FILES
   Coordinates.msg
@@ -41,6 +40,6 @@ include_directories(
 catkin_install_python(PROGRAMS
   scripts/distance_service.py
   scripts/position_publisher.py
-  scripts/modified_pointop.py
+  scripts/turtlebot3_pointop_key.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

@@ -101,6 +101,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/third_task" TYPE PROGRAM FILES "/home/saidberk/catkin_ws/build/third_task/catkin_generated/installspace/modified_pointop.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/third_task" TYPE PROGRAM FILES "/home/saidberk/catkin_ws/build/third_task/catkin_generated/installspace/turtlebot3_pointop_key.py")
 endif()
 
