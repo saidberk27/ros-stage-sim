@@ -1,0 +1,8 @@
+prefix=/home/saidberk/catkin_ws/devel
+
+Name: third_task
+Description: Description of third_task
+Version: 0.0.0
+Cflags: -I/home/saidberk/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs geometry_msgs nav_msgs message_runtime
