@@ -1,0 +1,66 @@
+# Robot tanımı
+define robot position
+(
+  # Robot boyutu (metre cinsinden)
+  size [0.3 0.3 0.1]
+  
+  # Robot görünümü
+  block
+  (
+    points 16
+    point[0] [ 0.225 0.000 ]
+    point[1] [ 0.208 0.086 ]
+    point[2] [ 0.159 0.159 ]
+    point[3] [ 0.086 0.208 ]
+    point[4] [ 0.000 0.225 ]
+    point[5] [ -0.086 0.208 ]
+    point[6] [ -0.159 0.159 ]
+    point[7] [ -0.208 0.086 ]
+    point[8] [ -0.225 0.000 ]
+    point[9] [ -0.208 -0.086 ]
+    point[10] [ -0.159 -0.159 ]
+    point[11] [ -0.086 -0.208 ]
+    point[12] [ -0.000 -0.225 ]
+    point[13] [ 0.086 -0.208 ]
+    point[14] [ 0.159 -0.159 ]
+    point[15] [ 0.208 -0.086 ]
+    z [0 0.1]
+    color "red"  # Robot rengi
+  )
+  
+  drive "diff"
+  gui_nose 1  # Ön tarafı gösteren ok
+)
+
+# Harita tanımı
+define map model
+(
+  bitmap "firsttaskWorld.png"
+  size [4 4 0.5]
+  boundary 1
+)
+
+# Pencere ayarları
+window
+(
+  size [800 800]
+  scale 100  # Görünüm ölçeği
+  center [0 0]
+  rotate [ 0 0]
+  show_data 1
+)
+
+# Haritayı yerleştir
+map
+(
+  name "dfs_map"
+  pose [0 0 0 0]
+  color "gray"
+)
+
+# Robotu yerleştir
+robot
+(
+  name "dfs_robot"
+  pose [0.5 0.5 0 0]  # x y z yaw
+)

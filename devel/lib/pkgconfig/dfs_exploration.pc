@@ -1,0 +1,8 @@
+prefix=/home/saidberk/catkin_ws/devel
+
+Name: dfs_exploration
+Description: Description of dfs_exploration
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

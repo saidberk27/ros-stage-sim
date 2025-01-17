@@ -1,0 +1,7 @@
+<launch>
+    <!-- Stage Simulator -->
+    <node pkg="stage_ros" type="stageros" name="stageros" args="$(find second_task)/worlds/second_task.world"/>
+    
+    <!-- Robot Motion Node -->
+    <node pkg="second_task" type="robot_motion.py" name="robot_motion" output="screen"/>
+</launch>

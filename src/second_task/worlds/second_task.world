@@ -1,0 +1,77 @@
+# Robot tanımı
+define robot position
+(
+  size [0.3 0.3 0.1]
+  
+  block
+  (
+    points 16
+    point[0] [ 0.225 0.000 ]
+    point[1] [ 0.208 0.086 ]
+    point[2] [ 0.159 0.159 ]
+    point[3] [ 0.086 0.208 ]
+    point[4] [ 0.000 0.225 ]
+    point[5] [ -0.086 0.208 ]
+    point[6] [ -0.159 0.159 ]
+    point[7] [ -0.208 0.086 ]
+    point[8] [ -0.225 0.000 ]
+    point[9] [ -0.208 -0.086 ]
+    point[10] [ -0.159 -0.159 ]
+    point[11] [ -0.086 -0.208 ]
+    point[12] [ -0.000 -0.225 ]
+    point[13] [ 0.086 -0.208 ]
+    point[14] [ 0.159 -0.159 ]
+    point[15] [ 0.208 -0.086 ]
+    z [0 0.1]
+    color "red"
+  )
+  
+  drive "diff"
+  gui_nose 1
+  ranger_return 1
+  obstacle_return 1
+)
+
+# Harita tanımı
+define map model
+(
+  bitmap "secondtaskWorld.png"
+  size [19.0 19.0 0.5]
+  boundary 1
+)
+
+window
+(
+  size [ 850.000 850.000 ]
+  scale 40.0
+  center [0 0]
+  rotate [ 0.000 0.0 ]
+  show_data 1
+)
+
+map
+(
+  name "task2_map"
+  pose [0 0 0 0]
+  color "gray"
+)
+
+# Robot tanımına eklenecek lazer tarayıcı tanımı
+define laser ranger
+(
+  sensor
+  (
+    range [0.0 8.0]
+    fov 270.25
+    samples 270
+  )
+  color "blue"
+  size [ 0.05 0.05 0.1 ]
+)
+
+robot
+(
+  name "robot1"
+  pose [-7.5 -7.5 0 90]  # Sol alt köşeden başla
+  laser(pose [ 0.1 0.0 0.0 0.0 ])
+)
