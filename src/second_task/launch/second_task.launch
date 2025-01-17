@@ -1,4 +1,7 @@
 <launch>
+    <!-- Load parameters from yaml -->
+    <rosparam command="load" file="$(find second_task)/config/config.yaml" />
+
     <!-- Stage Simulator -->
     <node pkg="stage_ros" type="stageros" name="stageros" args="$(find second_task)/worlds/second_task.world"/>
     

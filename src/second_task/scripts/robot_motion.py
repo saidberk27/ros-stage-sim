@@ -30,6 +30,8 @@ class RobotController:
         self.Kp = 0.8
         self.angle_tolerance = math.radians(1.0)
 
+        self.R = rospy.get_param('/robot_parameters/R', 3.0)  # Varsayılan değer 3.0
+
     def odom_callback(self, msg):
         orientation_q = msg.pose.pose.orientation
         (roll, pitch, yaw) = tf.transformations.euler_from_quaternion([
@@ -125,7 +127,7 @@ class RobotController:
                         # Sağa dön
                         self.rotate_precise(-90)
                         # İleri git
-                        self.move_forward_precise(3.0)
+                        self.move_forward_precise(self.R)
                         # Aşağı yöne dön
                         self.rotate_precise(-90)
                         self.direction = "DOWN"
@@ -138,7 +140,7 @@ class RobotController:
                         # Sola dön
                         self.rotate_precise(90)
                         # İleri git
-                        self.move_forward_precise(1.0)
+                        self.move_forward_precise(self.R)
                         # Yukarı yöne dön
                         self.rotate_precise(90)
                         self.direction = "UP"
