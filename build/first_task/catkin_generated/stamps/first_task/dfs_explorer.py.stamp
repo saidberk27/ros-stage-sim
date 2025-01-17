@@ -40,7 +40,7 @@ class DFSExplorer:
         self.angle_threshold = 0.05
 
     def create_adjacency_matrix(self):
-        obstacles = [(0,3), (1,2), (2,1)]  # Siyah hücreler
+        obstacles = [(0,3), (2,2), (3,3)]  # Siyah hücreler
 
         for i in range(self.grid_size):
             for j in range(self.grid_size):
