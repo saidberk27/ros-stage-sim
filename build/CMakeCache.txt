@@ -404,10 +404,16 @@ catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
 
 //Value Computed by CMake
-dfs_exploration_BINARY_DIR:STATIC=/home/saidberk/catkin_ws/build/dfs_exploration
+dfs_exploration_BINARY_DIR:STATIC=/home/saidberk/catkin_ws/build/first_task
 
 //Value Computed by CMake
-dfs_exploration_SOURCE_DIR:STATIC=/home/saidberk/catkin_ws/src/dfs_exploration
+dfs_exploration_SOURCE_DIR:STATIC=/home/saidberk/catkin_ws/src/first_task
+
+//Value Computed by CMake
+first_task_BINARY_DIR:STATIC=/home/saidberk/catkin_ws/build/first_task
+
+//Value Computed by CMake
+first_task_SOURCE_DIR:STATIC=/home/saidberk/catkin_ws/src/first_task
 
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/noetic/share/gencpp/cmake

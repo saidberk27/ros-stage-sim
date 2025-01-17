@@ -1,9 +1,0 @@
-<launch>
-  <!-- Stage Simulator -->
-  <node pkg="stage_ros" type="stageros" name="stageros" args="$(find dfs_exploration)/world/dfs_world.world" output="screen">
-    <param name="base_watchdog_timeout" value="0.2"/>
-  </node>
-  
-  <!-- DFS Explorer Node -->
-  <node pkg="dfs_exploration" type="dfs_explorer.py" name="dfs_explorer" output="screen"/>
-</launch>

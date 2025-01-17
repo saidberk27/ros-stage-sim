@@ -1,0 +1,8 @@
+prefix=/home/saidberk/catkin_ws/devel
+
+Name: first_task
+Description: Description of first_task
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -13,8 +13,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
-  "dfs_exploration/catkin_generated/ordered_paths.cmake"
-  "dfs_exploration/catkin_generated/package.cmake"
+  "first_task/catkin_generated/ordered_paths.cmake"
+  "first_task/catkin_generated/package.cmake"
   "second_task/catkin_generated/ordered_paths.cmake"
   "second_task/catkin_generated/package.cmake"
   "third_task/catkin_generated/ordered_paths.cmake"
@@ -24,9 +24,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "third_task/cmake/third_task-genmsg.cmake"
   "/home/saidberk/catkin_ws/devel/share/third_task/cmake/third_task-msg-paths.cmake"
   "/home/saidberk/catkin_ws/src/CMakeLists.txt"
-  "/home/saidberk/catkin_ws/src/dfs_exploration/CMakeLists.txt"
-  "/home/saidberk/catkin_ws/src/dfs_exploration/package.xml"
-  "/home/saidberk/catkin_ws/src/dfs_exploration/scripts/dfs_explorer.py"
+  "/home/saidberk/catkin_ws/src/first_task/CMakeLists.txt"
+  "/home/saidberk/catkin_ws/src/first_task/package.xml"
+  "/home/saidberk/catkin_ws/src/first_task/scripts/dfs_explorer.py"
   "/home/saidberk/catkin_ws/src/second_task/CMakeLists.txt"
   "/home/saidberk/catkin_ws/src/second_task/package.xml"
   "/home/saidberk/catkin_ws/src/second_task/scripts/reset_position.py"
@@ -232,7 +232,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "third_task/CMakeFiles/CMakeDirectoryInformation.cmake"
   "second_task/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "dfs_exploration/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "first_task/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

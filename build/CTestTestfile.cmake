@@ -7,4 +7,4 @@
 subdirs("gtest")
 subdirs("third_task")
 subdirs("second_task")
-subdirs("dfs_exploration")
+subdirs("first_task")

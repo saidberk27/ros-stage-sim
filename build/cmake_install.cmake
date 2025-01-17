@@ -133,7 +133,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/saidberk/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/saidberk/catkin_ws/build/third_task/cmake_install.cmake")
   include("/home/saidberk/catkin_ws/build/second_task/cmake_install.cmake")
-  include("/home/saidberk/catkin_ws/build/dfs_exploration/cmake_install.cmake")
+  include("/home/saidberk/catkin_ws/build/first_task/cmake_install.cmake")
 
 endif()
 
